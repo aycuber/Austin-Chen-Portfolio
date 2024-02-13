@@ -48,7 +48,7 @@
   --fs-6: 1.7rem;
   --fs-7: 1.5rem;
   --fs-8: 1.4rem;
-  
+
   --fw-700: 700;
 
   /**
@@ -467,21 +467,13 @@ body.nav-active { overflow: hidden; }
 
 .project-card {
   --padding: 24px;
-
   display: flex;
   flex-direction: column;
   gap: var(--padding);
   border-radius: var(--radius-8);
   overflow: hidden;
+  padding: var(--padding); /* Ensure consistent padding for all project cards */
 }
-
-.project-card-1,
-.project-card-2,
-:is(.project-card-3, .project-card-4) .card-content { padding: var(--padding); }
-
-.project-card-1 { padding-block-end: 0; }
-
-.project :is(.project-card-3, .project-card-4) { gap: 0; }
 
 .project-card .card-tag {
   font-size: var(--fs-8);
@@ -502,6 +494,9 @@ body.nav-active { overflow: hidden; }
 }
 
 .project-card .btn-text:is(:hover, :focus-visible) { gap: 10px; }
+
+
+
 
 
 
