@@ -893,3 +893,13 @@ textarea.input-field {
   .about .grid-list { gap: 60px; }
 
 }
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button {
+    margin-right: 1px; /* Adjust the margin as needed */
+}
+
