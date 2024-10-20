@@ -224,6 +224,11 @@ body.nav-active { overflow: hidden; }
   gap: 30px;
 }
 
+.card-banner img {
+  max-width: 100%;
+  height: auto; /* Ensure it maintains the aspect ratio */
+}
+
 [data-reveal] {
   opacity: 0;
   transition: 0.75s ease;
